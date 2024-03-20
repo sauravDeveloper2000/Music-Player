@@ -75,6 +75,7 @@ dependencies {
     implementation("androidx.media3:media3-ui:$media3Version")
     implementation("androidx.media3:media3-session:$media3Version")
     implementation("androidx.legacy:legacy-support-v4:1.0.0") // Needed MediaSessionCompat.Token
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
     // Glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation ("com.google.accompanist:accompanist-permissions:0.30.0")
