@@ -85,6 +85,9 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.50")
     // Coil
     implementation("io.coil-kt:coil-compose:2.6.0")
+
+    // Material Icon dependency
+    implementation("androidx.compose.material:material-icons-extended-android:1.6.4")
 }
 // Allow references to generated code
 kapt {

@@ -157,7 +157,7 @@ class AudioViewModel @Inject constructor(
                     audioServiceHandler.onPlayerEvents(AudioPlayerEvents.PlayOrPause)
                 }
                 is UIEvents.SeekTo -> {
-                    audioServiceHandler.onPlayerEvents(AudioPlayerEvents.SeekTo, seekPosition = ())
+                    audioServiceHandler.onPlayerEvents(AudioPlayerEvents.SeekTo, seekPosition = ((duration * uiEvents.position) / 100f).toLong())
                 }
                 UIEvents.SeekToNext -> audioServiceHandler.onPlayerEvents(AudioPlayerEvents.SeekToNext)
                 is UIEvents.SelectedAudioChange -> {
